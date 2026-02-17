@@ -2,25 +2,16 @@ public class OopsBannerUC3 {
 
     public static void main(String[] args) {
 
-        System.out.println(String.join("",
-                " *****", "   ", " *****", "   ", " ******", "   ", " *****"));
+        printLine(" ***** ", " ***** ", " ******", " ***** ");
+        printLine("*     *", "*     *", "*     *", "*     *");
+        printLine("*     *", "*     *", "*     *", "*      ");
+        printLine("*     *", "*     *", " ******", " ***** ");
+        printLine("*     *", "*     *", "*      ", "      *");
+        printLine("*     *", "*     *", "*      ", "*     *");
+        printLine(" ***** ", " ***** ", "*      ", " ***** ");
+    }
 
-        System.out.println(String.join("",
-                "*     *", " ", "*     *", "  ", "*     *", " ", "*     *"));
-
-        System.out.println(String.join("",
-                "*     *", " ", "*     *", "  ", "*     *", " ", "*     "));
-
-        System.out.println(String.join("",
-                "*     *", " ", "*     *", "  ", "******", "   ", " *****"));
-
-        System.out.println(String.join("",
-                "*     *", " ", "*     *", "  ", "*", "            ", "*"));
-
-        System.out.println(String.join("",
-                "*     *", " ", "*     *", "  ", "*", "      ", "*     *"));
-
-        System.out.println(String.join("",
-                " *****", "   ", " *****", "   ", "*", "       ", " *****"));
+    static void printLine(String a, String b, String c, String d) {
+        System.out.println(String.join("   ", a, b, c, d));
     }
 }
